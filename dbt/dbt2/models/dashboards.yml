@@ -1,0 +1,14 @@
+version: 2
+exposures:
+ -  name: Executive Dashboard
+    type: dashboard
+    maturity: low
+    url: https://0d574c41.us1a.app.preset.io/superset/dashboard/p/bZ8M2D1kWX6/
+    description: Executive Dashboard about Airbnb listings and hosts
+
+    depends_on:
+    - ref('dim_listings_with_hosts')
+    - ref('mart_full_moon_reviews')
+    owner:
+      name: Ian Mutuma  
+      email: iantush.mutuma@gmail.com
